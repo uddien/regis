@@ -1,0 +1,113 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+.pos-center {
+    margin: 0 auto;
+}
+
+textarea {
+    width: 11rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input.rt, input.rw {
+    width: 5.2rem;
+}
+
+.required {
+    font-weight: bold;
+    color: red;
+    margin-bottom: 2rem;
+}
+
+.panel-heading {
+    padding: 1rem;
+    background-color: #505050;
+    color: #fff;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+     border: 1px solid rgba(0, 0, 0, 0.09);
+     border-bottom: 1px solid #e0e0e0;
+    border-radius: 4px;
+    -webkit-transition: border 500ms ease-out;
+    transition: border 500ms ease-out;
+}
+
+.panel-content {
+    padding: 1rem 1rem;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    /*margin-left: -0.75rem;*/
+}
+
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.form-group {
+    clear: both;
+    margin-bottom: 0.4rem;
+    display: flex;
+}
+
+.form-item-label {
+    clear: both;
+    float: left;
+    display: table-cell;
+    vertical-align: top;
+    padding: 2px;
+    width: 160px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-item-separator {
+    display: table-cell;
+    width: 1px;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.form-item-field {
+    clear: right;
+    display: flex;
+    vertical-align: top;
+    padding: 1px;
+    text-align: left;
+}
+
+.title-header {
+    text-align: center;
+    font-weight: bold;
+}
