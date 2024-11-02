@@ -6,6 +6,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ripple-button.css">
     <title>Registrasi</title>
+    <style>       
+        .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 600px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: <?php echo $bg_color; ?>;
+        color: <?php echo $font_color; ?>;
+        font-family: Arial, sans-serif;
+        }       
+    </style>
 </head>
 <body>
     <div class="wrapper">
