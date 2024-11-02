@@ -1,3 +1,36 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = $_POST['nama_lengkap'];
+    $jenis_kelamin = $_POST['jenis_kelamin'];
+    $tl = strtoupper($_POST['tempat_lahir']);
+    $tgl = $_POST['tanggal_lahir'];
+    $tgl_format = date_format(date_create($tgl), 'd-m-Y');
+    // $ttl = $_POST['ttl'];
+    $alamat = $_POST['alamat'];
+    $email = $_POST['email'];
+    $no_hp = $_POST['nohp'];
+    $hobi = $_POST['hobi'];
+
+    // Handling file upload
+    $foto = $_FILES['foto_diri'];
+    $foto_name = $foto['name'];
+    $foto_tmp_name = $foto['tmp_name'];
+    $foto_dir = 'uploads/' . $foto_name;
+
+    // Save the uploaded file
+    move_uploaded_file($foto_tmp_name, $foto_dir);
+
+    // Determine background color based on gender
+    if ($jenis_kelamin == "Laki-Laki") {
+        $bg_color = "blue";
+        $font_color = "black";
+    } else {
+        $bg_color = "red";
+        $font_color = "white";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
